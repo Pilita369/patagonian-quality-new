@@ -5,7 +5,9 @@ const HeroSection = () => (
   <section className="relative min-h-[90vh] flex items-center overflow-hidden">
     <div
       className="absolute inset-0 bg-cover bg-center"
-      style={{ backgroundImage: "url('/banner-trans.png')" }}
+      style={{
+        backgroundImage: `url(${import.meta.env.BASE_URL}banner-trans.png)`,
+      }}
     />
 
     <div className="absolute inset-0 bg-black/45" />
@@ -19,9 +21,9 @@ const HeroSection = () => (
       >
         <div className="mb-6">
           <img
-            src="/logo-trans.png"
+            src={`${import.meta.env.BASE_URL}logo-trans.png`}
             alt="Patagonian Quality"
-            className="h-20 md:h-25 w-auto object-contain drop-shadow-lg"
+            className="h-20 md:h-24 w-auto object-contain drop-shadow-lg"
           />
         </div>
 
@@ -35,25 +37,23 @@ const HeroSection = () => (
           internacionales.
         </p>
 
-       <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4">
+          <a
+            href="https://wa.me/542995310897"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="hero" size="xl">
+              Solicitar Diagnóstico HACCP
+            </Button>
+          </a>
 
-  <a
-    href="https://wa.me/542995310897"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Button variant="hero" size="xl">
-      Solicitar Diagnóstico HACCP
-    </Button>
-  </a>
-
-  <a href="#servicios">
-    <Button variant="hero-outline" size="xl">
-      Ver Servicios
-    </Button>
-  </a>
-
-</div>
+          <a href="#servicios">
+            <Button variant="hero-outline" size="xl">
+              Ver Servicios
+            </Button>
+          </a>
+        </div>
       </motion.div>
     </div>
   </section>
