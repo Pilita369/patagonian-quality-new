@@ -21,7 +21,7 @@ const HeroSection = () => (
           <img
             src="/logo-trans.png"
             alt="Patagonian Quality"
-            className="h-16 md:h-20 w-auto object-contain drop-shadow-lg"
+            className="h-20 md:h-25 w-auto object-contain drop-shadow-lg"
           />
         </div>
 
